@@ -51,6 +51,7 @@ The above graphic is generated from the new retiring_titles table
 - The greatest needs by number of vacant positions by title are Senior Engineer and Senior Staff
 
 - We used the following code to filter the employee data for potential mentorship candidates
+``` SQL
 
 SELECT DISTINCT ON (e.emp_no) e.emp_no,
        e.first_name,
@@ -68,7 +69,7 @@ ON (e.emp_no = t.emp_no)
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND (de.to_date = '9999-01-01')
 ORDER BY e.emp_no;
-
+```
 
 
 - According to this table, PH currently employs 1,549 possible mentorship program entrants. See the included mentorshhip_eligibility.csv for the complete data set
@@ -76,6 +77,7 @@ ORDER BY e.emp_no;
 - The mentorship program is a good idea, but with only 1,549 eligible current employees, PH should start looking outside for hiring ASAP to fill the looming 90,398 open positions due to retirement. 
 
 - This many retirees will result in great cost in the form of training and lost revenue, so it’s not a bad idea to analyze the financial repercussions of the current employees leaving. What are their current salaries? The following queries give PH a quick snapshot of the current annual expenditure 
+``` SQL
 
 -- Create query showing the salary of a retiring employee
 SELECT ut.emp_no,
@@ -93,5 +95,5 @@ ORDER BY ut.emp_no;
 SELECT AVG(salary)::numeric(10,2)
 FROM retirement_salaries;
 
-
+```
 Currently, the average annual salary of PH’s soon-to-retire workforce is $52,909.18. 
