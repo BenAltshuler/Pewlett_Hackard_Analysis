@@ -7,7 +7,7 @@ Pewlett Hackard sought insight into its aging workforce. Administrators and HR n
 
 ## Methods
 
-- First, we identified the data types and keys of the disparate csv tables and created our own ERD (see below)
+First, we identified the data types and keys of the disparate csv tables and created our own ERD (see below)
 
 ![ERD](Images/EmployeeDB.png?raw=true “ERD”)
 
@@ -42,7 +42,7 @@ ORDER BY emp_no, to_date DESC;
 
 ## Results
 
-- Number of retiring employees PER TITLE 
+Number of retiring employees PER TITLE 
 
 ![Count](Images/Count_Titles.png?raw=true “Count of retirees per title”)
 
