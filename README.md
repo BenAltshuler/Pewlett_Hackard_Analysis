@@ -9,7 +9,7 @@ Pewlett Hackard sought insight into its aging workforce. Administrators and HR n
 
 First, we identified the data types and keys of the disparate csv tables and created our own ERD (see below)
 
-![ERD](Images/EmployeeDB.png?raw=true “ERD”)
+![ERD](Images/EmployeeDB.png)
 
 - Based on our ERD and CSV inputs, corresponding Postgresql tables were created
 
@@ -44,7 +44,7 @@ ORDER BY emp_no, to_date DESC;
 
 Number of retiring employees PER TITLE 
 
-![Count](Images/Count_Titles.png?raw=true “Count of retirees per title”)
+![Count](Images/Count_Titles.png)
 
 The above graphic is generated from the new retiring_titles table
 
